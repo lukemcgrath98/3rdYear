@@ -34,24 +34,6 @@ class TestLCA(TestCase):
         #       (2)     (3)
         #       / \     / \
         #    (4)   (5)(6)   (7)
-
-
-    # testing the findLCA function - if the LCA exists, return it, if not return -1
-    # testing an empty tree
-    def test_EmptyTree(self):
-        root = Node()
-        path = []
-        self.assertEqual(findLCA(root, 3, 4), -1)
-
-    def test_NotInTree(self):
-        root = Node(1)
-        self.assertEqual(findLCA(root, 2, 6), -1)
-
-    # testing only root - (should return itself, as a node can be an ancestor of itself)
-    def test_findLCARoot(self):
-        root = Node(1)
-        path = []
-        self.assertEqual(findLCA(root, 1, 1), 1)
     
     # testing a complete tree
     def test_findLCA(self):
