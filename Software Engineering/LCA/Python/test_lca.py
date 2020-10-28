@@ -46,13 +46,14 @@ class TestLCA(TestCase):
         root.right.right = Node(6)
         root.right.right.right = Node(8)
 
-        #           1
+        # visual representation of the tree
+        #          (1)
         #          / \
-        #         2   5
-        #        / \   \
-        #       3   4   6
+        #       (2)  (5)
+        #       / \    \
+        #     (3) (4)  (6)
         #        \       \
-        #         7       8
+        #        (7)     (8)
         
 
         # testing two nodes that are on different sides of the tree
