@@ -1,0 +1,8 @@
+Name: Luke McGrath
+ID: 17337376
+
+I changed t1Test.cpp a tiny bit so that it worked on my system. All I did was insert 'const' into the check function so the parameters read
+
+void check(const char *s, int v, int expected){
+
+as it would only work for me if I did this. As you can see from my console screenshot all the tests passed perfectly for me.
